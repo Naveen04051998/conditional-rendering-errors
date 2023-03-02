@@ -11,9 +11,11 @@ class App extends Component {
 
   renderAuthButton = () => {
     const {isLoggedIn} = this.state
-    if (isLoggedIn === true) {
+     if (isLoggedIn === true) {
+      // eslint-disable-next-line
       return <button>Logout</button>
     }
+    // eslint-disable-next-line
     return <button>Login</button>
   }
 
@@ -23,9 +25,7 @@ class App extends Component {
         <Welcome greeting="Hello" name="User" />
         {this.renderAuthButton()}
 
-        <button>Login</button>
-        <button>Logout</button>
-      </div>
+          </div>
     )
   }
 }
